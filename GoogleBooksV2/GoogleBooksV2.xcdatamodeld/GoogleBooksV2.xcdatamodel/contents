@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Book" representedClassName="Book" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Books" representedClassName="Books" syncable="YES" codeGenerationType="class"/>
+    <entity name="ImageLink" representedClassName="ImageLink" syncable="YES" codeGenerationType="class">
+        <attribute name="smallThumbnail" optional="YES" attributeType="String"/>
+        <relationship name="info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VolumeInfo" inverseName="imageLink" inverseEntity="VolumeInfo"/>
+    </entity>
+    <entity name="VolumeInfo" representedClassName="VolumeInfo" syncable="YES" codeGenerationType="class">
+        <attribute name="authors" optional="YES" attributeType="String"/>
+        <attribute name="averageRating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="categories" optional="YES" attributeType="String"/>
+        <attribute name="publisher" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="imageLink" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ImageLink" inverseName="info" inverseEntity="ImageLink"/>
+    </entity>
+    <elements>
+        <element name="Book" positionX="-158.9921264648438" positionY="-8418.8203125" width="128" height="58"/>
+        <element name="Books" positionX="-212.951904296875" positionY="-8273.443908691406" width="128" height="43"/>
+        <element name="ImageLink" positionX="-43.18731689453125" positionY="-8536.177215576172" width="128" height="73"/>
+        <element name="VolumeInfo" positionX="186.3721313476562" positionY="-8435.844421386719" width="128" height="133"/>
+    </elements>
+</model>

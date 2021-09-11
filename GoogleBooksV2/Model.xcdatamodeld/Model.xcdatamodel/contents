@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BookInfo" representedClassName="BookInfo" syncable="YES">
+        <attribute name="authors" optional="YES" attributeType="String"/>
+        <attribute name="averageRating" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="bookDescription" optional="YES" attributeType="String"/>
+        <attribute name="categories" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="publisher" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="BookInfo" positionX="-63" positionY="-18" width="128" height="134"/>
+    </elements>
+</model>
