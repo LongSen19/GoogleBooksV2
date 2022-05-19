@@ -45,6 +45,7 @@ class GoogleBooks: ObservableObject {
         autosaveCancellable = $favoriteBooks.sink { favoriteBooks in
             do {
                 let booksData = try JSONEncoder().encode(favoriteBooks)
+                print("Test commit 2")
                 try booksData.write(to: self.favoriteBooksJSONURL, options: .atomicWrite)
             } catch let error {
                 print(error)
