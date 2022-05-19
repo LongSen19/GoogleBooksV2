@@ -18,6 +18,7 @@ class ImageLoader: ObservableObject {
         if stringURL != nil {
             loadingImage = true
             self.url = URL(string: stringURL!)
+            print("test commit 1")
         } else {
             self.url = nil
         }
