@@ -82,7 +82,6 @@ class GoogleBooks: ObservableObject {
             .map(\.items)
             .replaceError(with: [])
             .eraseToAnyPublisher()
-
     }
     
     func remove(at offsets: IndexSet) {
@@ -95,5 +94,27 @@ class GoogleBooks: ObservableObject {
         }
     }
     
+    
 }
 
+
+enum HTTPError: LocalizedError {
+    case statusCode
+    case post
+}
+
+struct Post: Codable {
+
+    let id: Int
+    let title: String
+    let body: String
+    let userId: Int
+}
+
+struct Todo: Codable {
+
+    let id: Int
+    let title: String
+    let completed: Bool
+    let userId: Int
+}

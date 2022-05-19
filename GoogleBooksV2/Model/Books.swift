@@ -20,7 +20,7 @@ struct Book: Codable, Identifiable{
     
 
     struct VolumeInfo: Codable {
-        let title: String?
+        let title1: String?
         let publisher: String?
         let authors: [String]?
         let averageRating: Double?
@@ -35,7 +35,7 @@ struct Book: Codable, Identifiable{
     }
     
     var title: String {
-        return volumeInfo.title ?? ""
+        return volumeInfo.title1 ?? ""
     }
     
     var publisher: String {
